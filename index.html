@@ -34,14 +34,14 @@
                   document.querySelector("p").innerHTML=` Refresh and try again`.fontcolor("white").fontsize("20");
                   document.querySelector("button").className="btn btn-danger";
                   document.querySelector("button").disabled=true;
-                  document.querySelector("img").src="../public/image/block.png";
+                  document.querySelector("img").src="./public/image/block.png";
                   document.querySelector("body").style.backgroundColor="red";
                 
                   break;
                  }
                  if(data.pin===password){
                     
-                    document.querySelector("img").src="../public/image/success.gif";
+                    document.querySelector("img").src="./public/image/success.gif";
                     document.querySelector("p").innerHTML=` Login Success`.fontcolor("white").fontsize("20");
                     document.querySelector("button").style.display="none";
                     document.getElementById("txtPassword").style.display="none";
@@ -70,7 +70,7 @@
 <body onload="loadBody()" class="container-fluid " >
    <div class="d-flex justify-content-center " id="total">
      <div>
-        <img width="90%">
+        <img width="90%" >
           <input type="password" id="txtPassword">
           <button onclick="check()" class="btn btn-primary">Login</button>
           <p></p>
